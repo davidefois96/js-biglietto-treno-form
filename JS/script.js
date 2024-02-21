@@ -3,7 +3,7 @@ let Nome;
 const numeroChilometri = document.querySelector('.numeroChilometri');
 let NumeroChilometri;
 const etàPasseggero = document.querySelector('.etàPasseggero');
-let Etàpasseggero 
+let EtàPasseggero;
 const  prezzoAlChilometro = 0.21 ;
 let prezzoTotale;
 const btn1 = document.querySelector('.btn1');
@@ -32,14 +32,14 @@ btn1.addEventListener('click',function(event){
 
 
 
-// if(etàPasseggero < 18){
-//   prezzoTotale= (numeroChilometri*prezzoAlChilometro*0.8)
-// }else if(etàPasseggero > 65){
-//   prezzoTotale= (numeroChilometri*prezzoAlChilometro*0.6)
-// }else {
-//   prezzoTotale= (numeroChilometri*prezzoAlChilometro)
-// }
+if(EtàPasseggero === 'Minorenne'){
+  prezzoTotale= (NumeroChilometri*prezzoAlChilometro*0.8)
+}else if(EtàPasseggero === 'Over65' ){
+  prezzoTotale= (NumeroChilometri*prezzoAlChilometro*0.6)
+}else {
+  prezzoTotale= (NumeroChilometri*prezzoAlChilometro)
+}
 
-// console.log(prezzoTotale);
+console.log(prezzoTotale);
 
-// document.getElementById('output').innerHTML +=  prezzoTotale.toFixed(2) + '€';
+document.getElementById('output').innerHTML +=  prezzoTotale.toFixed(2) + '€';
