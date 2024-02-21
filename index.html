@@ -12,47 +12,61 @@
 
 <body class="d-flex flex-column justify-content-around align-items-center   ">
 
-  <form class="row gy-2 gx-3 align-items-center text-center ">
+  <div class="card">
+    <h3 class="card-header text-center ">Calcola il prezzo del tuo biglietto</h3>
+    <div class="card-body">
+      <form class="row gy-2 gx-3 align-items-center text-center ">
     
-    <div class="col-4">
-
-      <label class="mb-3 " for="autoSizingInput">Nome Cognome</label>
-      <input type="text" class="form-control nome" id="autoSizingInput" placeholder="Nome cognome">
-
-    </div>
-    <div class="col-4">
-
-      <label class="mb-3 " for="autoSizingInputGroup">Km da percorrere</label>
-      <input type="text" class="form-control numeroChilometri" id="autoSizingInputGroup" placeholder="km da percorrere">
+        <div class="col-4">
+    
+          <label class="mb-3 " for="autoSizingInput">Nome Cognome</label>
+          <input type="text" class="form-control nome" id="autoSizingInput" placeholder="Nome cognome">
+    
+        </div>
+        <div class="col-4">
+    
+          <label class="mb-3 " for="autoSizingInputGroup">Km da percorrere</label>
+          <input type="text" class="form-control numeroChilometri" id="autoSizingInputGroup" placeholder="km da percorrere">
+          
+        </div>
+        <div class="col-4">
+    
+          <label class="mb-3" for="autoSizingSelect">Fascia d' età</label>
+          <select class="form-select etaPasseggero " id="autoSizingSelect">
+            
+            <option  value="Minorenne">Minorenne</option>
+            <option class="etaPasseggero" value="Over65">Over65</option>
+            <option class="etaPasseggero" value="Intermedio">Intermedio</option>
+    
+          </select>
+    
+        </div>
+        
+        <div class="col-12 mt-5 d-flex justify-content-around ">
+    
+          <button type="submit" class="btn btn-primary btn1">Genera</button>
+          <button type="reset" class="btn btn-danger btn2">Annulla</button>
+    
+        </div>
+        
+      </form>
       
     </div>
-    <div class="col-4">
-
-      <label class="mb-3" for="autoSizingSelect">Fascia d' età</label>
-      <select class="form-select etaPasseggero " id="autoSizingSelect">
-        
-        <option  value="Minorenne">Minorenne</option>
-        <option class="etaPasseggero" value="Over65">Over65</option>
-        <option class="etaPasseggero" value="Intermedio">Intermedio</option>
-
-      </select>
-
-    </div>
-    
-    <div class="col-12 mt-5 d-flex justify-content-around ">
-
-      <button type="submit" class="btn btn-primary btn1">Genera</button>
-      <button type="reset" class="btn btn-danger btn2">Annulla</button>
-
-    </div>
-    
-  </form>
-
-  <div class="ticket d-none ">
-
-    <p id="output"> </p>
-
   </div>
+
+  
+  <div class="card ticket d-none">
+    <h3 class="card-header text-center ">Il tuo biglietto</h3>
+    <div class="card-body">
+      
+
+     <p id="output"> </p>
+    
+      
+     
+    </div>
+  </div>
+  
 
   <script src="JS/script.js"></script>
 </body>

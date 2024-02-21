@@ -52,7 +52,7 @@ btn1.addEventListener('click',function(event){
 
   }else{
 
-    alert('qualcosa è andato storto')
+    alert('ATTENZIONE! Il campo Nome Cognome ammette solo lettere! Il campo Km da percorrere ammette solo numeri!')
 
   }
   
