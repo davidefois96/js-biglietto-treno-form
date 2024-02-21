@@ -1,20 +1,26 @@
 const nome = document.querySelector('.nome');
+let Nome;
 const numeroChilometri = document.querySelector('.numeroChilometri');
-const etàPasseggero ;
-const prezzoAlChilometro = 0.21 ;
+let NumeroChilometri;
+const etàPasseggero = document.querySelector('.etàPasseggero');
+let Etàpasseggero 
+const  prezzoAlChilometro = 0.21 ;
 let prezzoTotale;
+const btn1 = document.querySelector('.btn1');
+const btn2 = document.querySelector('.btn2');
 
-nome.addEventListener('click',function(){
-  nome =nome.value;
+btn1.addEventListener('click',function(event){
+
+  event.preventDefault();
+  Nome= nome.value ;
+  NumeroChilometri= numeroChilometri.value ;
+  Etàpasseggero= etàPasseggero.value;
+
+  
+  console.log(NumeroChilometri, Nome, Etàpasseggero);
+  
+  
 })
-
-console.log(nome);
-
-numeroChilometri.addEventListener('click',function(){
-  numeroChilometri =numeroChilometri.value;
-})
-
-console.log(nome);
 
 
 
