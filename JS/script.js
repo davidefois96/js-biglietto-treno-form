@@ -48,7 +48,7 @@ btn1.addEventListener('click',function(event){
 
     ticket.classList.remove('d-none')
 
-    document.getElementById('output').innerHTML ='Ciao! ' + Nome + ' ecco il tuo ticket dà ' + prezzoTotale.toFixed(2) + '€ ' + discount;
+    document.getElementById('output').innerHTML ='Ciao ' + Nome + ' ecco il tuo ticket da ' + prezzoTotale.toFixed(2) + '€ ' + discount;
 
   }else{
 
